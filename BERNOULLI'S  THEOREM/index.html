@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernoulli's Equation Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <h1>Bernoulli's Equation Calculator</h1>
+
+    <!-- Input and Output Table -->
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Symbol</th>
+            <th>Unit</th>
+            <th>Input Value</th>
+            <th>Output Value</th>
+        </tr>
+        <tr>
+            <td>Pressure Head</td>
+            <td>P<sub>1</sub></td>
+            <td>meters</td>
+            <td><input type="number" id="pressureHead" placeholder="Enter P1"></td>
+            <td id="pressureOutput">--</td>
+        </tr>
+        <tr>
+            <td>Velocity Head</td>
+            <td>V<sub>1</sub></td>
+            <td>meters</td>
+            <td><input type="number" id="velocityHead" placeholder="Enter V1"></td>
+            <td id="velocityOutput">--</td>
+        </tr>
+        <tr>
+            <td>Potential Head</td>
+            <td>H<sub>1</sub></td>
+            <td>meters</td>
+            <td><input type="number" id="potentialHead" placeholder="Enter H1"></td>
+            <td id="potentialOutput">--</td>
+        </tr>
+    </table>
+
+    <!-- Button to Calculate -->
+    <button id="calculateBtn">Calculate Total Energy</button>
+
+    <!-- Total Energy Output -->
+    <h2>Total Energy:</h2>
+    <div id="totalEnergyOutput">-- m</div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
